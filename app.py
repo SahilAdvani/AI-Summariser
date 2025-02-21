@@ -8,8 +8,8 @@ load_dotenv()
 
 app = Flask(__name__)
 CORS(app, origins=["mkidpcgdjgfhmjbbbfgeaofpnfglbpai"])
-api_key = os.getenv("GEMINI API KEY")
-gemini = genai.Client(api_key=api_key) # Initialize Gemini
+api_key_ = os.getenv("GEMINI_API_KEY")
+gemini = genai.Client(api_key=api_key_) # Initialize Gemini
 
 @app.after_request
 def add_cors_headers(response):
