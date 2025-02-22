@@ -7,7 +7,7 @@ load_dotenv()
 
 
 app = Flask(__name__)
-CORS(app, origins=["mkidpcgdjgfhmjbbbfgeaofpnfglbpai"])
+CORS(app)
 api_key_ = os.getenv("GEMINI_API_KEY")
 gemini = genai.Client(api_key=api_key_) # Initialize Gemini
 
@@ -39,4 +39,4 @@ def summarize_text():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)  # Set debug=False in production
+    app.run()
