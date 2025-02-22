@@ -11,6 +11,7 @@ AI Summarizer is a Chrome extension that extracts and summarizes webpage content
 ## 📂 Project Structure
 ```
 AI-Summarizer/
+|-- Screenshots
 │-- manifest.json
 │-- popup.html
 │-- popup.js
